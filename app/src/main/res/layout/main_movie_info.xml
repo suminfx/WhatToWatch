@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textViewTitleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/title"
+        style="@style/LabelStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View style="@style/BorderStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitleLabel"
+        app:layout_constraintBottom_toTopOf="@id/textViewOriginalTitleLabel"/>
+
+    <TextView
+        android:id="@+id/textViewOriginalTitleLabel"
+        style="@style/LabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/original_title"
+        app:layout_constraintStart_toStartOf="@+id/textViewTitleLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitleLabel" />
+
+    <View style="@style/BorderStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewOriginalTitleLabel"
+        app:layout_constraintBottom_toTopOf="@id/textViewReleaseDateLabel"/>
+
+    <TextView
+        android:id="@+id/textViewReleaseDateLabel"
+        style="@style/LabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/release_date"
+        app:layout_constraintStart_toStartOf="@+id/textViewOriginalTitleLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOriginalTitleLabel" />
+
+    <View style="@style/BorderStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewReleaseDateLabel"
+        app:layout_constraintBottom_toTopOf="@id/textViewVoteAverageLabel"/>
+
+    <TextView
+        android:id="@+id/textViewVoteAverageLabel"
+        style="@style/LabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rating"
+        app:layout_constraintStart_toStartOf="@+id/textViewReleaseDateLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewReleaseDateLabel" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/test_title"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTitleLabel"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCenterOfScreen"
+        app:layout_constraintTop_toTopOf="@+id/textViewTitleLabel" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineCenterOfScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/textViewOriginalTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/test_original_title"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewOriginalTitleLabel"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCenterOfScreen"
+        app:layout_constraintTop_toTopOf="@+id/textViewOriginalTitleLabel" />
+
+    <TextView
+        android:id="@+id/textViewReleaseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/test_release_date"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewReleaseDateLabel"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCenterOfScreen"
+        app:layout_constraintTop_toTopOf="@+id/textViewReleaseDateLabel" />
+
+    <TextView
+        android:id="@+id/textViewVoteAverage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/test_rating"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewVoteAverageLabel"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCenterOfScreen"
+        app:layout_constraintTop_toTopOf="@+id/textViewVoteAverageLabel" />
+
+
+
+</android.support.constraint.ConstraintLayout>
+</layout>

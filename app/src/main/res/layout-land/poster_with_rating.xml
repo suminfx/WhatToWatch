@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/imageViewBigPoster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/description_big_poster"
+        app:srcCompat="@mipmap/ic_star"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imageViewStar"
+        android:layout_width="@dimen/size_of_star_icon"
+        android:layout_height="@dimen/size_of_star_icon"
+        android:layout_margin="@dimen/margin_between_poster_and_star_icon"
+        android:contentDescription="@string/description_star_icon"
+        app:layout_constraintTop_toTopOf="@id/imageViewBigPoster"
+        app:layout_constraintEnd_toEndOf="@id/imageViewBigPoster"
+        app:srcCompat="@mipmap/ic_star"/>
+
+
+    <TextView
+        android:id="@+id/textViewRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorDarkGrey"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/imageViewStar"
+        app:layout_constraintStart_toStartOf="@id/imageViewStar"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewStar"
+        app:layout_constraintTop_toTopOf="@id/imageViewStar"
+        tools:text="@string/test_rating"/>
+
+</android.support.constraint.ConstraintLayout>
+</layout>

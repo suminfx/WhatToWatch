@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/parentLayoutTrailerItem"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin_between_trailers"
+    android:background="@drawable/selector_trailer">
+
+
+    <ImageView
+        android:id="@+id/imageViewButtonPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_from_left_screen"
+        android:layout_marginTop="@dimen/vertical_margin_of_trailers"
+        android:layout_marginBottom="@dimen/vertical_margin_of_trailers"
+        android:background="@color/colorAccent"
+        android:contentDescription="@string/description_icon_launch_trailer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <TextView
+        android:id="@+id/textViewTrailerTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_from_left_screen"
+        tools:text="@string/test_trailer_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:padding="@dimen/padding_inside_trailer_title"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewButtonPlay"
+        app:layout_constraintStart_toEndOf="@+id/imageViewButtonPlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewButtonPlay" />
+
+</android.support.constraint.ConstraintLayout>
+</layout>

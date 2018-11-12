@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageViewBigPoster"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/description_big_poster"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imageViewStar"
+        android:layout_width="@dimen/size_of_star_icon"
+        android:layout_height="@dimen/size_of_star_icon"
+        android:layout_margin="@dimen/margin_between_poster_and_star_icon"
+        android:contentDescription="@string/description_star_icon"
+        app:layout_constraintTop_toTopOf="@id/imageViewBigPoster"
+        app:layout_constraintEnd_toEndOf="@id/imageViewBigPoster"
+        app:srcCompat="@mipmap/ic_star"/>
+
+    <TextView
+        android:id="@+id/textViewRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorDarkGrey"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/imageViewStar"
+        app:layout_constraintStart_toStartOf="@id/imageViewStar"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewStar"
+        app:layout_constraintTop_toTopOf="@id/imageViewStar"
+        tools:text="@string/test_rating"/>
+
+    <ImageView
+        android:id="@+id/imageViewIconFavourite"
+        android:layout_width="@dimen/size_image_icon_add_favourite"
+        android:layout_height="@dimen/size_image_icon_add_favourite"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginEnd="@dimen/margin_end_icon_add_favourite"
+        android:contentDescription="@string/description_icon_favourite"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewBigPoster"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBigPoster"
+        android:onClick="onClickChangeFavouriteState"
+        app:srcCompat="@mipmap/ic_add_to_favourite"  />
+
+
+</android.support.constraint.ConstraintLayout>
+</layout>

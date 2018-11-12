@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Что посмотреть?</string>
+    <string name="description_poster_of_movie">Постер фильма</string>
+    <string name="top_rated">Самые рейтинговые</string>
+    <string name="most_popular">Наиболее популярные</string>
+    <string name="description_big_poster">Постер фильма</string>
+    <string name="release_date">Дата релиза:</string>
+    <string name="description_star_icon">Иконка - рейтинг фильма</string>
+    <string name="title">Название:</string>
+    <string name="original_title">Оригинальное название:</string>
+    <string name="rating">Рейтинг:</string>
+    <string name="overview">Описание:</string>
+    <string name="trailers_label">Трейлеры:</string>
+    <string name="reviews">Отзывы:</string>
+    <string name="description_icon_launch_trailer">Просмотреть трейлер</string>
+    <string name="description_icon_favourite">Добавить или удалить из избранного</string>
+    <string name="warning_no_internet_connection">Отсутствует интернет подключение. Пожалуйста, попробуйте позже...</string>
+    <string name="description_reload_page">Перезагрузить страницу</string>
+    <string name="slow_internet_connection_warning">Медленное интернет соединение. Пожалуйста, попробуйте позже...</string>
+    <string name="my_favourite">Избранное</string>
+    <string name="added_to_favourite">Добавлено в избранное</string>
+    <string name="deleted_from_favourite">Удалено из избранного</string>
+    <string name="alert_title_delete_from_favourite">Вы уверены?</string>
+    <string name="alert_message_delete_from_favourite">Вы хотите удалить этот фильм из избранного?</string>
+    <string name="warning_no_added_movies">У вас пока нет фильмов в избранном.</string>
+    <string name="no">Нет</string>
+    <string name="yes">Да</string>
+</resources>
